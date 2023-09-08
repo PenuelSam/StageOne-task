@@ -44,13 +44,12 @@ body{
     margin: 5px 0;
 }
 
-.track,
+
 .github {
     font-size: 16px;
     text-decoration: none;
-    color: #007BFF;
+    color: rgb(161, 161, 247);
     display: block;
-    margin-top: 10px;
 }
 
 .github:hover {

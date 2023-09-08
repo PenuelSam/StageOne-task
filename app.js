@@ -10,14 +10,14 @@ function updateDateTime() {
   ];
   const now = new Date();
   const dayOfWeek = daysOfWeek[now.getUTCDay()];
-  const utcTime = now.toUTCString();
+  const utcTimeMilliseconds = now.getTime();
 
   document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent =
-    dayOfWeek;
-  document.querySelector('[data-testid="currentUTCTime"]').textContent =
-    utcTime;
+    `Current Day : ${dayOfWeek}`;
+    document.querySelector(`[data-testid="currentUTCTime"]`).textContent = `UTC Time : ${utcTimeMilliseconds}`;
 }
 
 setInterval(updateDateTime, 1000);
 
 updateDateTime();
+
