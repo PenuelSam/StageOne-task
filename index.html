@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage One Task</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="userName" data-testid="penuel">My Personal Data</h1>
-        <div class="profileImg">
-            <img src="image/Me.jpg" alt="penuel" data-testid="slackDisplayImage">
-        </div>
-        <h1 class="userName" data-testid="penuel">SlackName : Penuel</h1>
-        <div class="dayTime">
-        <h1 class="day" data-testid="currentDayOfTheWeek"></h1>
-        <h1 class="time" data-testid="currentUTCTime"></h1>
-        </div>
-        
-        <h3 class="track" data-testid="frontend"> Track : Frontend</h3>
-        
-       <p style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 5px;">GitHub: <a class="github" href="https://github.com/PenuelSam/StageOne-task" data-testid="githubURL">GitHub Repository</a> </p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1> Personal Data</h1>
 
-</body>
-<script src="app.js"></script>
+      <!-- Slack Display Picture -->
+      <img
+        src=""
+        alt=""
+        data-testid="slackDisplayImage"
+      />
+<div class="card-info">
+   <!-- Slack Name -->
+   <p data-testid="slackUserName"></p>
+
+   <!-- Current Day of the Week -->
+   <p data-testid="currentDayOfTheWeek"></p>
+
+   <!-- Current UTC Time -->
+   <p data-testid="currentUTCTime"></p>
+
+   <!-- Track -->
+   <p data-testid="myTrack"></p>
+
+   <!-- GitHub URL --> 
+ </div>
+ <a
+     href=""
+     data-testid="githubURL"
+     >GitHub Repository</a
+   >
+</div>
+   
+
+    <script src="app.js"></script>
+  </body>
 </html>
